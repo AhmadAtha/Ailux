@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+    <!-- Letakkan sebelum header -->
+<div id="particles-js"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ahmad Daffa</title>
+    <!-- CDN -->
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+<script>
+    tsParticles.load("particles-js", {
+        particles: {
+            number: { value: 60 },
+            color: { value: ["#6366f1", "#f43f5e"] },
+            shape: { type: "circle" },
+            opacity: { value: 0.6 },
+            size: { value: 3 },
+            move: {
+                enable: true,
+                speed: 2,
+                direction: "none",
+                outModes: "out"
+            }
+        },
+        interactivity: {
+            events: {
+                onHover: { enable: true, mode: "repulse" }
+            }
+        }
+    });
+</script>
+    <!-- AOS Scroll Animate -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Vanilla Tilt (efek 3D) -->
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Dark Mode -->
+    <button id="darkModeToggle" title="Ganti Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Header -->
+    <header>
+        <img src="assets/20250724_075801.png" alt="Foto Saya" class="foto-profil">
+        <h1>Ailux Studio</h1>
+        <p class="subtitle"> Developer & UI Designer</p>
+        <div class="social-links">
+            <a href="https://github.com/AhmadAtha" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ahmad-daffa-5a5548377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/ahmadsnc_?igsh=MXhoanFreXRsZzJ5Ng==" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/message/MFH4R74WHMUOI1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <!-- About -->
+        <section class="glass-card">
+            <h2><i class="fas fa-user"></i> Tentang Saya</h2>
+            <p>
+                Saya adalah developer asal Yogyakarta yang fokus pada menciptakan website yang cepat, 
+                responsif, dan estetik.
+            </p>
+        </section>
+
+        <!-- Skills -->
+        <section class="glass-card">
+            <h2><i class="fas fa-code"></i> Kemampuan </h2>
+            <div class="skills-grid">
+                <span>HTML <i class="fab fa-html5"></i></span>
+                <span>CSS <i class="fab fa-css3-alt"></i></span>
+                <span>JavaScript <i class="fab fa-js"></i></span>
+                <span>Figma <i class="fab fa-figma"></i></span>
+                 <span>Coreldraw <i class="fab fa-pen"></i></span>
+            </div>
+        </section>
+    </main>
+<!-- Portfolio Projects -->
+<section class="glass-card" data-aos="fade-up">
+    <h2><i class="fas fa-briefcase"></i> Portfolio Project</h2>
+
+    <!-- Filter button -->
+    <div class="filter-btns">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="ui">UI Design</button>
+        <button class="filter-btn" data-filter="corel">CorelDRAW</button>
+    </div>
+
+    <div class="projects-grid">
+        <!-- Web -->
+        <div class="project-card" data-category="web" data-aos="flip-left">
+            <img src="assets/20250724_075527_0000.png" alt="E-Commerce">
+            <div class="project-info">
+                <h3>E-Commerce Store</h3>
+                <p>Menggunakan html,css,dan JavaScript + Figma untuk membuat website.</p>
+                <div class="project-links">
+                    <a href="https://github.com/AhmadAtha/ecommerce" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://ailux-ecommerce.netlify.app" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- UI Design -->
+        <div class="project-card" data-category="ui" data-aos="flip-left">
+            <img src="assets/20250724_075527_0000.png" alt="Weather App">
+            <div class="project-info">
+                <h3> UI</h3>
+                <p> UI di Figma + CorelDRAW icons.</p>
+                <div class="project-links">
+                    <a href="https://github.com/AhmadAtha/weather-app" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CorelDRAW -->
+        <div class="project-card" data-category="corel" data-aos="flip-left">
+            <img src="assets/20250724_075527_0000.png" alt="Banner">
+            <div class="project-info">
+                <h3>CorelDRAW Banner</h3>
+                <p>Desain banner & logo untuk brand lokal.</p>
+                <div class="project-links">
+                    <a href="https://behance.net/gallery/123456" target="_blank"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
