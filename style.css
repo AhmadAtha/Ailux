@@ -5,7 +5,7 @@
     --text-color: #2c3e50;
     --card-bg: rgba(255, 255, 255, 0.25);
     --shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
-    --accent: #6366f1;
+    --accent: #DDB254;
 }
 
 body.dark {
@@ -213,7 +213,7 @@ h2 {
 }
 
 .project-links a:hover {
-    background: #4f46e5;
+    background: #DDB254;
 }
 
 /* Filter buttons */
@@ -252,7 +252,7 @@ h2 {
 }
 
 .project-card:hover {
-    box-shadow: 0 0 25px rgba(99, 102, 241, 0.5);
+    box-shadow: 0 0 25px #DDB254;
 }
 
 /* Modal */
@@ -302,7 +302,7 @@ h2 {
 }
 
 .back-btn:hover {
-    background: #4f46e5;
+    background: #DDB254;
     transform: scale(1.05);
 }
 .trail {
